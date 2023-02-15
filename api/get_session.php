@@ -1,5 +1,5 @@
 <?php include_once "base.php";
-$row = $Movie->find($_GET['id']);
+
 $row = $Movie->find($_GET['id']);
 $date = $_GET['date'];
 $hr = date("G");
