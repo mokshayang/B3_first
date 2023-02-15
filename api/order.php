@@ -39,6 +39,6 @@ foreach($seats as $seat){
 <div class="ct">
     <h3>請選擇你的座位 !</h3>
     
-    <button onclick="booking()" type="button">上一頁</button>
+    <button onclick="booking()" type="button">選擇座位</button>
 </div>
 <?php } ?>

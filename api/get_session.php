@@ -8,9 +8,10 @@ if($date === date("Y-m-d") && $hr>=14){
     $start = 1;
 }
 for($i=$start;$i<=5;$i++){
+    $tt = $Ord->sum('qt',['id'=>$row['id'],'date'=>$date,'sission'=>$Ord->sss[$i]]);
     echo "<option value='{$Movie->sss[$i]}'>";
     echo $Movie->sss[$i];
-    echo "座位剩 20";
+    echo "座位剩 ".(20-$tt);
     echo "</option>";
 }
 
