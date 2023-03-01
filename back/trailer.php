@@ -24,7 +24,7 @@
     <form action="./api/total.php?api=edit_trailer" method="post">
         <div style="height: 210px ; overflow:auto;"><!--固定屬性-->
             <?php
-            $ts = $Trailer->all(" order by rank desc");
+            $ts = $Tp->all(" order by rank desc");
             foreach ($ts as $k => $t) {
                 $show = ($t['sh'] == 1) ? "checked" : '';
                 $prev = ($k == 0) ? $t['id'] : $ts[$k - 1]['id']; //如果是第一筆，跟自己換，否則往上
